@@ -15,26 +15,20 @@ function request($url) {
     /* END: Data */
 
     /* START: Prepare the POST and GET string */
-    $post = array();
-    foreach ($_POST as $field => $value) {
-        $post[] = $field . '=' . urlencode(stripslashes($value));
-    }
-    $post = implode("&", $post);
-    $get = array();
-    foreach ($_GET as $field => $value) {
-        $get[] = $field . '=' . urlencode(stripslashes($value));
-    }
-    $get = implode("&", $get);
+    $post = http_build_query($_POST);
+    $get = http_build_query($_GET);
     /* END: Prepare the POST and GET string */
 
     /* START: Prepare header */
     if (count($_POST) > 0) {
-        if ($get != '')
+        if ($get != '') {
             $path .= '?' . $get;
+        }
         $header = "POST " . $path . " HTTP/1.0\r\n";
     } else {
-        if ($get != '')
+        if ($get != '') {
             $path .= '?' . $get;
+        }
         $header = "GET " . $path . " HTTP/1.0\r\n";
     }
     $header .= "Host: " . $host . "\r\n";
