@@ -21,16 +21,21 @@ Fully functional, working and tested in production 24/7
 
 How to Install
 ---------------------------------------------------------------
-1) Drag and drop the script to a location on your server
-2) The location must be public facing
+Drag and drop the script to a location on your server
 
 How to Use
 ---------------------------------------------------------------
-POST or GET your requests at the script. Use the parameter "url_to_fetch"
-to specify the location of the remote API
+POST or GET your request at the script. The parameter "url_to_fetch"
+is reserved to specify the location of the remote API. All other
+parameters will be sent to the location set in the "url_to_fetch"
+parameters
 
-Example
+Examples
 ---------------------------------------------------------------
-1) Fetching JSON from http://jsonip.com/
+1) Fetching JSON from JSONIP (URL: http://jsonip.com/)
 
 proxy.php?url_to_fetch=http%3A%2F%2Fjsonip.com%2F
+
+2) Fetching JSON from Quantum Random Numbers (URL: https://qrng.anu.edu.au/API/jsonI.php?length=1&type=uint8)
+proxy.php?url_to_fetch=https%3A%2F%2Fqrng.anu.edu.au%2FAPI%2FjsonI.php&length=1&type=uint8
+
