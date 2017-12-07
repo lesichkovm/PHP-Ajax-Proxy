@@ -61,7 +61,7 @@ function request($url) {
     /* END: Send request */
 
     //var_dump($err_num);var_dump($err_str);
-    list($http_headers, $http_body) = split("\r\n\r\n", $result, 2);
+    list($http_headers, $http_body) = explode("\r\n\r\n", $result, 2);
     return $http_body;
 }
 
