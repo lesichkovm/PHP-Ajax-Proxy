@@ -34,8 +34,12 @@ Examples
 ---------------------------------------------------------------
 1) Fetching JSON from JSONIP (URL: http://jsonip.com/)
 
+```
 proxy.php?url_to_fetch=http%3A%2F%2Fjsonip.com%2F
+```
 
 2) Fetching JSON from Quantum Random Numbers (URL: https://qrng.anu.edu.au/API/jsonI.php?length=1&type=uint8)
-proxy.php?url_to_fetch=https%3A%2F%2Fqrng.anu.edu.au%2FAPI%2FjsonI.php&length=1&type=uint8
 
+```
+proxy.php?url_to_fetch=https%3A%2F%2Fqrng.anu.edu.au%2FAPI%2FjsonI.php&length=1&type=uint8
+```
