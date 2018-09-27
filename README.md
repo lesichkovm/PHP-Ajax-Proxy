@@ -9,6 +9,7 @@ cross-domain Ajax requests:
 - Drag and drop single file with no external dependencies
 - Supports POST and GET requests
 - Does not need CURL enabled on server
+- Works with HTTPS and HTTP URLs
 
 When to Use
 ---------------------------------------------------------------
