@@ -2,6 +2,7 @@
 
 /**
  * URL to be used if the 'url_to_fetch' parameter is not sent
+ * Quite useful if all requests are to the same endpoint
  * @var string
  */
 $defaultUrl = '';
