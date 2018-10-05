@@ -4,7 +4,7 @@
  * URL to be used if the 'url_to_fetch' parameter is not sent
  * @var string
  */
-$defaultUrl = 'https://api.msg.eco/';
+$defaultUrl = '';
 
 // 1. URL to fetch
 $url = urlToFetch($defaultUrl);
